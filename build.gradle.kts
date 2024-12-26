@@ -27,8 +27,9 @@ dependencies {
 	implementation("org.postgresql:postgresql:42.7.4")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
-	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+	testImplementation("org.junit.jupiter:junit-jupiter-engine:5.11.4")
+	testImplementation("org.testcontainers:junit-jupiter:1.20.4")
+	testImplementation("org.testcontainers:postgresql:1.20.3")
 }
 
 kotlin {
